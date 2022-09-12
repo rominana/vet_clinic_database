@@ -2,6 +2,7 @@
 
 CREATE TABLE animals (
     name varchar(100)
+    
 CREATE TABLE animals( 
 	id INT GENERATED ALWAYS AS IDENTITY,
 	name VARCHAR(50),
