@@ -12,10 +12,10 @@ This repository includes files with plain SQL that can be used to recreate a dat
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 #### 👤 Author
-* @rominana :paraguay:
-- GitHub: @rominana
-- Twitter: @romina_pati
-- LinkedIn: (www.linkedin.com/in/romina-patino/)
+
+- GitHub: [@rominana](https://github.com/rominana)
+- Twitter: [@romina_pati](https://twitter.com/@romina_pati)
+- LinkedIn: [Romina Patiño](www.linkedin.com/in/romina-patino/)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
