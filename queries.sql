@@ -26,7 +26,7 @@ SELECT * from animals WHERE name NOT LIKE 'Gabumon';
 SELECT * from animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
 -- second milestone
--- TRANSACTIONS 
+-- ADD TRANSACTIONS QUERIES
 BEGIN; -- start transaction
 
 UPDATE animals
@@ -48,6 +48,7 @@ SELECT COUNT(*) from animals WHERE escape_attempts = 0;
 SELECT AVG(weight_kg) from animals;
 
 -- Who escapes the most, neutered or not neutered animals?
+--modified by suggestion 
 SELECT neutered, AVG(escape_attempts) FROM animals GROUP BY neutered;
 
 -- What is the minimum and maximum weight of each type of animal?
