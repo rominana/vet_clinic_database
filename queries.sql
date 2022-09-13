@@ -25,8 +25,18 @@ SELECT * from animals WHERE name NOT LIKE 'Gabumon';
 -- Find all animals with a weight between 10.4kg and 17.3kg (including the animals with the weights that equals precisely 10.4kg or 17.3kg)
 SELECT * from animals WHERE weight_kg BETWEEN 10.4 AND 17.3;
 
-
 -- second milestone
+-- TRANSACTIONS 
+BEGIN; -- start transaction
+
+UPDATE animals
+SET species = 'unspecified'; -- make change
+
+SELECT species from animals; -- verify that change was made
+ROLLBACK;
+
+SELECT species from animals;
+
 
 -- How many animals are there?
 SELECT COUNT(*) from animals;
@@ -38,7 +48,7 @@ SELECT COUNT(*) from animals WHERE escape_attempts = 0;
 SELECT AVG(weight_kg) from animals;
 
 -- Who escapes the most, neutered or not neutered animals?
-SELECT SUM(escape_attempts), neutered from animals GROUP BY neutered;
+SELECT neutered, AVG(escape_attempts) FROM animals GROUP BY neutered;
 
 -- What is the minimum and maximum weight of each type of animal?
 SELECT MIN(weight_kg), MAX(weight_kg), species from animals GROUP BY species;
