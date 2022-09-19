@@ -106,6 +106,8 @@ GROUP BY O.full_name
 HAVING COUNT(A.name) IS NULL OR COUNT(A.name) IS NOT NULL
 ORDER BY COUNT(O.full_name) DESC;
 
+
+
 -- FOUR MILESTONE
 
 
@@ -178,3 +180,9 @@ JOIN animals A ON A.id = D.animals_id
 JOIN species S ON S.id = A.species_id
 WHERE V.name = 'Maisy Smith'
 GROUP BY S.name;
+
+-- FIFTH MILESTONE
+
+SELECT COUNT(*) FROM visits where animals_id = 4;
+SELECT * FROM visits where vets_id = 2;
+SELECT * FROM owners where email = 'owner_18327@mail.com';

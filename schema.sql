@@ -70,3 +70,11 @@ CREATE TABLE visits (
 	FOREIGN KEY (vets_id) REFERENCES vets (id) ON DELETE CASCADE,
 	FOREIGN KEY (animals_id) REFERENCES animals (id) ON DELETE CASCADE
 );
+
+-- FIFTH MILESTONE
+
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+CREATE INDEX visits_animalsid_asc ON visits(animals_id ASC);
+CREATE INDEX visits_vets_asc ON visits(vets_id ASC);
+CREATE INDEX owners_email_id_asc ON owners(email ASC);
